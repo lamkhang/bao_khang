@@ -1,0 +1,52 @@
+{
+  "name": "boilerplate-react-styledcomponent",
+  "version": "0.1.0",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "ress": "^4.0.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.2",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "private": true,
+  "scripts": {
+    "fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint \"src/**/*.jsx\"",
+    "lint:js": "eslint \"src/**/*.{js,jsx}\"",
+    "start": "react-scripts start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
